@@ -21,14 +21,14 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
-# Addons
+# RisingOS
+RISING_MAINTAINER="Lord Itachi|Niv"
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := true
-
-# Gms
-WITH_GMS := true
-
-# Ship Google Camera
 TARGET_PREBUILT_GOOGLE_CAMERA := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2992
@@ -38,5 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="komodo-user 15 BP1A.250405.007 13240079 release-keys" \
     BuildFingerprint=google/komodo/komodo:15/BP1A.250405.007/13240079:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
+    RisingChipset="Tensor G4" \
+    RisingMaintainer="Slogar25"
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
