@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # PixelParts
-include packages/apps/PixelParts/device.mk
+-include packages/apps/PixelParts/device.mk
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
