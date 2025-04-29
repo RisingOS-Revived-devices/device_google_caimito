@@ -33,6 +33,7 @@ TARGET_CORE_GMS := false
 TARGET_CORE_GMS_EXTRAS := false
 TARGET_GMS_EXTRAS := true
 WITH_PIXEL_OVERLAYS := true
+TARGET_INCLUDE_GOOGLE_DIALER := true
 
 ifneq ($(WITH_GMS),false)
 ifneq ($(TARGET_CORE_GMS),true)
@@ -48,7 +49,7 @@ TARGET_SCREEN_WIDTH := 1344
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="komodo-user 15 BP1A.250405.007 13240079 release-keys" \
     BuildFingerprint=google/komodo/komodo:15/BP1A.250405.007/13240079:user/release-keys \
-    DeviceProduct=$(DEVICE_CODENAME)
+    DeviceProduct=$(DEVICE_CODENAME) \
     RisingChipset="Tensor G4" \
     RisingMaintainer="Slogar25"
 
