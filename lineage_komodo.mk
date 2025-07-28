@@ -22,11 +22,10 @@ PRODUCT_MODEL := Pixel 9 Pro XL
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
 # Banner
-RISING_MAINTAINER=Slogar25
+RISING_MAINTAINER=Slogar25 X OscarM1019
 
 # Rising Stuff
 TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := true
 
 # GMS
 WITH_GMS := true
@@ -42,6 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/komodo/komodo:16/BP2A.250705.008/13578956:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME) \
 	RisingChipset="Google Tensor 4" \
-	RisingMaintainer="Slogar25"
+	RisingMaintainer="Slogar25 X OscarM1019"
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
