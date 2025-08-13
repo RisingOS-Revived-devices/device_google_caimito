@@ -41,10 +41,10 @@ TARGET_SCREEN_HEIGHT := 2856
 TARGET_SCREEN_WIDTH := 1280
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="caiman-user 16 BP2A.250705.008 13578956 release-keys" \
-    BuildFingerprint=google/caiman/caiman:16/BP2A.250705.008/13578956:user/release-keys \
+    BuildDesc="caiman-user 16 BP2A.250805.005 13691446 release-keys" \
+    BuildFingerprint=google/caiman/caiman:16/BP2A.250805.005/13691446:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME) \
-	RisingChipset="Google Tensor 4" \
-	RisingMaintainer="Slogar25 x OscarM1019"
+    RisingChipset="Google Tensor 4" \
+    RisingMaintainer="Slogar25 X OscarM1019"
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
